@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Halaman sign up</title>
+	<link href="css/default/bootstrap.min.css" rel="stylesheet">
+	<!-- CSS Style -->
+	<link rel="stylesheet" type="text/css" href="css/users/signup.css">
+	<!--JQuery-->
+	<script src="jquery-3.3.1.js"></script>
+	<!-- Bootstrap JS Library-->
+	<script src="js/bootstrap.min.js"></script>
+</head>
+<body style="background-image: url('img/bg-img/bg-2.jpg');">
+	<div class="bagatas row">
+		<div class="col-md-6 col-sm-12">
+			<a id="home" href="index.html">WebKita</a>	
+		</div>
+		<div class="col-md-6">
+			<a href="#"><button id="signup" class="btn btn-primary">sign up</button></a>
+			<a data-toggle="modal" data-target="#popup1"><button id="login" class="btn btn-primary">log in</button></a>
+			<div class="modal fade" id="popup1" tabindex="0" role="dialog" aria-labelledby="modalCenterTitle" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered" role="document">
+   					<div class="modal-content">
+	   				    <div class="modal-header">
+       						<h5 class="modal-title" id="modalTitle">Silahkan Login Terlebih dahulu</h5>
+       						<button type="button" class="close" data-dismiss="modal" value="Close">
+       						</button>
+   						</div>
+						<div class="modal-body">
+   							<form>
+   								<p>Log in</p>
+   								<div class="form-group ">
+   									<input type="text" name="nama" placeholder="username/email/No.Telpon" class="form-control">
+        						</div>
+        						<div class="form-group">
+        							<input type="text" name="password" placeholder="katasandi" class="form-control">
+        						</div>
+        						<div class="chk">
+        							<input type="checkbox" name="cb1">
+        							<label id="sty1"> Ingat saya</label>
+        						</div>
+        						<div class="lupapass">
+        							<p id="p1">Lupa Katasandi? <a id="a1" href="">klik disini</a></p>
+        						</div>
+        					</form>
+      					</div>
+      					<div class="modal-footer">
+        					<button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+        					<button type="button" class="btn btn-primary">Log in</button>
+      					</div>
+    				</div>
+  				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-12 col-md-12 col-sm-12">
+				<h3 style="text-align: center;">Pendaftaran Member</h3>
+				<form action="">
+					<div class="form1 form-group">
+						<label for="nama">Nama</label>
+						<input type="text" class="form-control" placeholder="nama lengkap" name="nama">
+					</div>
+					<div class="form1 form-group">
+						<label for="username">Username</label>
+						<input type="text" class="form-control" placeholder="username" name="username">
+					</div>
+					<div class="form1 form-group">
+						<label for="nama">Email</label>
+						<input type="email" class="form-control" placeholder="email" name="email">
+					</div>
+					<div class="form1 form-group">
+						<label for="re-email">Konfirmasi email</label>
+						<input type="email" class="form-control" placeholder="konfirmasi email" name="re-email">
+					</div>
+					<div class="form1 form-group">
+						<label for="katasandi">Password</label>
+						<input type="text" class="form-control" placeholder="password" name="katasandi">
+					</div>
+					<div class="form1 form-group">
+						<label for="re-katasandi">Konfirmasi Password</label>
+						<input type="text" class="form-control" placeholder="konfirmasi password" name="re-katasandi">
+					</div>
+					<div id="btm">
+							<input type="checkbox" name="boxkc">
+							<span id="boxsty"> Saya telah menyetujui semua persyaratan dan ketentuan yang ada
+							</span>	
+					</div>
+					<button type="submit" class="btn btn-primary daftar" >Daftar</button>
+
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
